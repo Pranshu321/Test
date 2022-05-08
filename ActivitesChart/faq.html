@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FAQ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style type="text/css">
+      body{
+        background: #151719;
+        padding-top: 20px;
+        font-family: monospace;
+      }
+      .header{
+        border-radius: 20px 20px 0px 0px;
+        padding: 10px 0px;
+        background: #5658DD;
+        color: #fff;
+        width: 100%;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+      }
+      .faq-item{
+        margin-bottom: 40px;
+        margin-top: 40px;
+      }
+      .faq-body{
+        display: none;
+        margin-top: 30px;
+      }
+      .faq-wrapper{
+        width: 75%;
+        margin: 0 auto;
+      }
+      .faq-inner{
+        padding: 30px;
+        background: aliceblue;
+      }
+      .faq-plus{
+        float: right;
+        font-size: 1.4em;
+        line-height: 1em;
+        cursor: pointer;
+      }
+      hr{
+        background-color: #9b9b9b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="faq-wrapper">
+          <div class="header">
+            <h1>FAQs</h1>
+          </div>
+          <div class="faq-inner">
+            <div class="faq-item">
+              <h3>
+                How can volunteers find a suitable NGO?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                Volunteers can filter NGOs based on the domain they work in, the place they primarily carry their operations in, and the type of relief they provide. They can even filter NGOs based on the most recent contributions made in a specific domain. This helps volunteers to find suitable NGOs to contribute in.
+              </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+              <h3>
+                How can volunteers connect with NGOs?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                Volunteers can connect with NGOs by either directly communicating with them through their contact information,for example, email address or contact numbers, or they can even send a volunteer request to the NGOs through our website, and then the NGOs can further contact them whenever they require vonlunteers.
+              </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+              <h3>
+                What is the motto of this webiste?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                Most NGOs do not have a streamlined platform to interact with those in need and those who are willing to help. Most of this work is decentralized and those who are willing to volunteer have no way of getting in touch with the workers. We wish to fill this gap, and make it easier for volunteers to find suitable NGOs in which they can contribute.
+              </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+              <h3>
+                How can NGOs connect with us?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+                NGOs can connect with us by making a profile on our platform by simply filling a form. They can add all the necessary information about their ngo and even share their work to help suitable volunteers find them.
+              </div>
+            </div>
+            <hr>
+            <div class="faq-item">
+              <h3>
+                What is the purpose of the events page?
+                <span class="faq-plus">&plus;</span>
+              </h3>
+              <div class="faq-body">
+               The events page displays various events organised by NGOs. This enables NGOs to share their work with the world and even spread awareness about important issues. users can use this page to explore new NGOs and connect with them.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(".faq-plus").on('click',function(){
+        $(this).parent().parent().find('.faq-body').slideToggle();
+      });
+    </script>
+  </body>
+</html>
